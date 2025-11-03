@@ -13,8 +13,10 @@ each modeled as a fully actuated simple mechanical system on a Lie group $G$ wit
 
 Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
 $$
+\begin{align}
 (g_i, \pi_i) \in G \times \mathfrak{g}^*, \\
 (g_{v_i}, \pi_{v_i}) \in G \times \mathfrak{g}^*,
+\end{align}
 $$
 with left–invariant kinetic energy metrics defined by constant inertia tensors:
 \begin{align}
