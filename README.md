@@ -169,15 +169,27 @@ $$
 ## 7. Mathematical Conventions
 
 **Coadjoint action:**  
-$\langle \operatorname{Ad}_g^*\mu, \zeta \rangle = \langle \mu, \operatorname{Ad}_{g^{-1}}\zeta \rangle$
+$$
+\begin{align}
+\langle \operatorname{Ad}_g^*\mu, \zeta \rangle = \langle \mu, \operatorname{Ad}_{g^{-1}}\zeta \rangle
+\end{align}
+$$
 
 **Right–invariant kinematics:**  
-$\dot{g} = \omega g$
+$$
+\begin{align}
+\dot{g} = \omega g
+\end{align}
+$$
 
 **Derivative rule:**  
-$\frac{d}{dt}(\operatorname{Ad}_{e^{-1}}^*\pi)
+$$
+\begin{align}
+\frac{d}{dt}(\operatorname{Ad}_{e^{-1}}^*\pi)
 = \operatorname{Ad}_{e^{-1}}^*\dot{\pi}
-+ \operatorname{ad}_{\omega_e}^*\operatorname{Ad}_{e^{-1}}^*\pi$
++ \operatorname{ad}_{\omega_e}^*\operatorname{Ad}_{e^{-1}}^*\pi
+\end{align}
+$$
 
 
 ---
