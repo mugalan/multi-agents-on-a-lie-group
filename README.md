@@ -9,7 +9,7 @@ The framework extends the **AGLES-PID** and **virtual-structure synchronization*
 We consider $N$ agents
 $$\mathscr{A} = \{A_1, A_2, \dots, A_N\},$$
 
-each modeled as a fully actuated simple mechanical system on a Lie group $ G $ with Lie algebra $ \mathfrak{g} $ and dual $ \mathfrak{g}^* $.
+each modeled as a fully actuated simple mechanical system on a Lie group $G$ with Lie algebra $\mathfrak{g}$ and dual $\mathfrak{g}^*$.
 
 Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
 \begin{align}
