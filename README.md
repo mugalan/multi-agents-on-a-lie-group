@@ -6,7 +6,7 @@ The framework extends the **AGLES-PID** and **virtual-structure synchronization*
 ## 1. System Setup
 
 ### Agents and Virtual Systems
-We consider $ N $ agents
+We consider $$ N $$ agents
 \begin{align}
 \mathscr{A} = \{A_1, A_2, \dots, A_N\},
 \end{align}
