@@ -195,10 +195,14 @@ $$
 **Derivative rule:**  
 
 $$
-\begin{align}
-\frac{d}{dt}(\mathrm{Ad}_{e^{-1}}^*\pi) &= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}+ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi
-\end{align}
+\begin{aligned}
+\frac{d}{dt}\!\left(\mathrm{Ad}_{{e^{-1}}}^{*}\pi\right)
+&= \mathrm{Ad}_{{e^{-1}}}^{*}\dot{\pi}
+\;+\;
+\mathrm{ad}_{{\omega_e}}^{*}\mathrm{Ad}_{{e^{-1}}}^{*}\pi
+\end{aligned}
 $$
+
 
 ---
 
