@@ -71,7 +71,7 @@ $$
 \end{align}
 $$
 
-If $g_r(t)={\bar{g}}_{i}{g}_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
+If  $g_r(t)=\bar{g}_i$ $g_r(t)={\bar{g}}_{i}{g}_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
 
 3. **Virtual system synchronization**  
 Choose a communication strategy and $f^u_{v_i}$ so that
