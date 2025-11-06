@@ -1,4 +1,5 @@
-This repository summarizes the geometric control framework for a network of fullyactuated simple mechanical systems evolving on a Lie group $ G $.  
+This repository summarizes a geometric control framework for a network of fullyactuated simple mechanical systems evolving on a Lie group $G$.  
+
 The framework extends the **AGLES-PID** and **virtual-structure synchronization** methodology to multi-agent systems.
 
 ---
@@ -19,11 +20,12 @@ $$
 \end{align}
 $$
 with left–invariant kinetic energy metrics defined by constant inertia tensors:
+$$
 \begin{align}
 \mathbb{I}_i : \mathfrak{g} \to \mathfrak{g}^*, \qquad
 \mathbb{I}_{v_i} : \mathfrak{g} \to \mathfrak{g}^*.
 \end{align}
-
+$$
 ---
 
 ## 2. Right–Invariant Dynamics
@@ -55,20 +57,20 @@ Each agent executes a **three–step strategy**:
    g_r(t) = \bar{g}_i g_{v_i}(t),
    \end{align}
    $$
-   where $ \bar{g}_i \in G $ is constant.  
-   In $ SE(3) $, this represents maintaining a fixed pose offset relative to $V_i$.
+   where $\bar{g}_i \in G $is constant.  
+   In $SE(3)$, this represents maintaining a fixed pose offset relative to $V_i$.
 
 2. **Agent tracking problem**  
-   Choose $ f_i^u $ so that 
+   Choose $f_i^u$ so that 
    $$ 
    \begin{align}
    \lim_{t \to \infty} g_i(t) = g_r(t).
    \end{align}
    $$
-   If $ g_r(t) = \bar{g}_i g_{v_i}(t) $, then $ A_i $ converges to configuration $ \bar{g}_i $ relative to $V_i$.
+   If $g_r(t) = \bar{g}_i g_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
 
 3. **Virtual system synchronization**  
-   Choose a communication strategy and $ f^u_{v_i} $ so that
+   Choose a communication strategy and $f^u_{v_i}$ so that
    $$  
    \begin{align}
    \lim_{t \to \infty} g_{v_i}(t) = g_v(t), \quad \forall i,
@@ -118,10 +120,11 @@ $$
 
 ## 5. AGLES–PID Control Law
 
-Let $ f_e : G \to \mathbb{R} $ be a polar Morse function with unique minimum at the identity.  
+Let $f_e : G \to \mathbb{R}$ be a polar Morse function with unique minimum at the identity.  
 Define
 
-$$\begin{align}
+$$
+\begin{align}
 df_e = \pi_e \cdot e, \qquad
 \dot{\pi}_I = \pi_e.
 \end{align}
@@ -158,7 +161,7 @@ $$
 A global controller broadcasts $g_v(t)$;  each agent uses its AGLES–PID law to track $g_v(t)$.  The broadcast can be encoded or key–protected.
 
 ### Decentralized
-Each agent communicates with neighbors to share $(g_{v_i}(t), \pi_{v_i}(t))$ and applies a consensus-based control $ f^u_{v_i} $ to achieve
+Each agent communicates with neighbors to share $(g_{v_i}(t), \pi_{v_i}(t))$ and applies a consensus-based control $f^u_{v_i}$ to achieve
 $$
 \begin{align}
 \lim_{t\to\infty} g_{v_i}(t) = g_v(t), \quad \forall i.
@@ -206,6 +209,3 @@ $$
 
 * Reza Olfati-Saber and Naomi Ehrich Leonard,  **"Consensus and Cooperation in Networked Multi-Agent Systems,"**  *Proceedings of the IEEE*, Vol. 95, No. 1, 2007, pp. 215–233.  [PDF](https://ieeexplore.ieee.org/document/4118472)
 
----
-
-### © 2025 — Research Notes on Geometric Control and Synchronization on Lie Groups
