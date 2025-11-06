@@ -36,9 +36,9 @@ $$
 \end{align}
 $$
 where
-- $ \omega = \mathbb{I}^{-1}\pi \in \mathfrak{g} $ is the body velocity,
-- $ f^e \in \mathfrak{g}^* $ is an external (disturbance) force, and
-- $ f^u \in \mathfrak{g}^* $ is the fully actuated control input.
+- $\omega = \mathbb{I}^{-1}\pi \in \mathfrak{g}$ is the body velocity,
+- $f^e \in \mathfrak{g}^*$ is an external (disturbance) force, and
+- $f^u \in \mathfrak{g}^*$ is the fully actuated control input.
 
 For virtual systems $V_i$, $f^e_{v_i} \equiv 0$.
 
