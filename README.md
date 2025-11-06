@@ -118,7 +118,7 @@ The **momentum error dynamics** (with right–invariant kinematics) are:
 
 $$
 \begin{align}
-\dot{\pi}_e &= {\mathrm{Ad}}_{e^{-1}}^*\dot{\pi}_v - \dot{\pi}_i + {\mathrm{ad}}_{\omega_e}^*{\mathrm{Ad}}_{e^{-1}}^*\pi_v.\
+\dot{\pi}_e &= {\mathrm{Ad}}_{e^{-1}}^*\dot{\pi}_v - \dot{\pi}_i + {\mathrm{ad}}_{\omega_e}^*{\mathrm{Ad}}_{e^{-1}}^*\pi_v.
 \end{align}
 $$
 
