@@ -17,8 +17,8 @@ Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
 
 $$
 \begin{align}
-(g_i, \pi_i) \in G \times {\mathfrak{g}}, \\
-(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}},
+(g_i, \pi_i) \in G \times {\mathfrak{g}}^*, \\
+(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}}^*,
 \end{align}
 $$
 
