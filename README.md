@@ -13,14 +13,8 @@ $$\mathscr{A} = \{A_1, A_2, \dots, A_N\},$$
 
 each modeled as a fully actuated simple mechanical system on a Lie group $G$ with Lie algebra $\mathfrak{g}$ and dual ${\mathfrak{g}}^*$.
 
-Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
-
-$$
-\begin{align}
-(g_i, \pi_i) \in G \times {\mathfrak{g}}^*, \\
-(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}}^*,
-\end{align}
-$$
+Each agent $A_i$ and its virtual counterpart $V_i$ evolve as $(g_i, \pi_i) \in G \times {\mathfrak{g}}^*$, 
+$(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}}^*$,
 
 with left–invariant kinetic energy metrics defined by constant inertia tensors:
 
