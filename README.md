@@ -43,6 +43,7 @@ $$
 \dot{\pi} = f^e + f^u,
 \end{align}
 $$
+
 where
 - $\omega = \mathbb{I}^{-1}\pi \in \mathfrak{g}$ is the body velocity,
 - $f^e \in \mathfrak{g}^*$ is an external (disturbance) force, and
