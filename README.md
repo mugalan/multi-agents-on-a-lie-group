@@ -11,7 +11,7 @@ We consider $N$ agents
 
 $$\mathscr{A} = \{A_1, A_2, \dots, A_N\},$$
 
-each modeled as a fully actuated simple mechanical system on a Lie group $G$ with Lie algebra $\mathfrak{g}$ and dual $\mathfrak{g}^*$.
+each modeled as a fully actuated simple mechanical system on a Lie group $G$ with Lie algebra $\mathfrak{g}$ and dual ${\mathfrak{g}}^*$.
 
 Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
 
@@ -76,6 +76,7 @@ $$
 \lim_{t \to \infty} g_i(t) = g_r(t).
 \end{align}
 $$
+
 If $g_r(t) = \bar{g}_i g_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
 
 3. **Virtual system synchronization**  
@@ -86,6 +87,7 @@ $$
 \lim_{t \to \infty} g_{v_i}(t) = g_v(t), \quad \forall i,
 \end{align}
 $$
+
 ensuring asymptotic consensus of all virtual systems.
 
 ---
@@ -99,12 +101,13 @@ $$
 e = g_v g_i^{-1}.
 \end{align}
 $$
+
 Then:
 
 $$
 \begin{align}
 \dot{e} &= \omega_e \cdot e, \qquad
-\omega_e &= \omega_v - \operatorname{Ad}_e \omega_i.
+\omega_e &= \omega_v - \mathrm{Ad}_e \omega_i.
 \end{align}
 $$
 
@@ -112,8 +115,8 @@ Define the **error momentum**
 
 $$
 \begin{align}
-\pi_e = \operatorname{Ad}_{g_i}^* \mathbb{I}\operatorname{Ad}_{g_v^{-1}}\omega_e
-       = \operatorname{Ad}_{e^{-1}}^*\pi_v - \pi_i.
+\pi_e = \mathrm{Ad}_{g_i}^* \mathbb{I}\mathrm{Ad}_{g_v^{-1}}\omega_e
+       = \mathrm{Ad}_{e^{-1}}^*\pi_v - \pi_i.
 \end{align}
 $$
 
@@ -123,9 +126,9 @@ $$
 \begin{align}
 \boxed{
 \dot{\pi}_e
-= \operatorname{Ad}_{e^{-1}}^*\dot{\pi}_v
+= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}_v
 - \dot{\pi}_i
-+ \operatorname{ad}_{\omega_e}^*\operatorname{Ad}_{e^{-1}}^*\pi_v.
++ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_v.
 }
 \end{align}
 $$
@@ -150,8 +153,8 @@ $$
 \begin{align}
 f_i^u =
 \left(
-\operatorname{Ad}_{e^{-1}}^*\dot{\pi}_r
-+ \operatorname{ad}_{\omega_e}^*\operatorname{Ad}_{e^{-1}}^*\pi_r
+\mathrm{Ad}_{e^{-1}}^*\dot{\pi}_r
++ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_r
 - f_i^e
 \right)
 - k_p\pi_e - k_d\pi_e - k_I\pi_I.
@@ -167,6 +170,7 @@ $$
 \dot{\pi}_e = -k_p\pi_e - k_d\pi_e - k_I\pi_I.
 \end{align}
 $$
+
 > “The error dynamics do not get any simpler or more straightforward than this.”
 
 ---
@@ -193,7 +197,7 @@ $$
 
 $$
 \begin{align}
-\langle \operatorname{Ad}_g^*\mu, \zeta \rangle = \langle \mu, \operatorname{Ad}_{g^{-1}}\zeta \rangle
+\langle \mathrm{Ad}_g^*\mu, \zeta \rangle = \langle \mu, \mathrm{Ad}_{g^{-1}}\zeta \rangle
 \end{align}
 $$
 
@@ -209,9 +213,9 @@ $$
 
 $$
 \begin{align}
-\frac{d}{dt}(\operatorname{Ad}_{e^{-1}}^*\pi)
-= \operatorname{Ad}_{e^{-1}}^*\dot{\pi}
-+ \operatorname{ad}_{\omega_e}^*\operatorname{Ad}_{e^{-1}}^*\pi
+\frac{d}{dt}(\mathrm{Ad}_{e^{-1}}^*\pi)
+= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}
++ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi
 \end{align}
 $$
 
