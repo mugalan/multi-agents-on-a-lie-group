@@ -8,6 +8,7 @@ The framework extends the **AGLES-PID** and **virtual-structure synchronization*
 
 ### Agents and Virtual Systems
 We consider $N$ agents
+
 $$\mathscr{A} = \{A_1, A_2, \dots, A_N\},$$
 
 each modeled as a fully actuated simple mechanical system on a Lie group $G$ with Lie algebra $\mathfrak{g}$ and dual $\mathfrak{g}^*$.
@@ -26,6 +27,7 @@ $$
 \mathbb{I}_{v_i} : \mathfrak{g} \to \mathfrak{g}^*.
 \end{align}
 $$
+
 ---
 
 ## 2. Right–Invariant Dynamics
@@ -167,6 +169,7 @@ $$
 \lim_{t\to\infty} g_{v_i}(t) = g_v(t), \quad \forall i.
 \end{align}
 $$
+
 ---
 
 ## 7. Mathematical Conventions
@@ -193,7 +196,6 @@ $$
 + \operatorname{ad}_{\omega_e}^*\operatorname{Ad}_{e^{-1}}^*\pi
 \end{align}
 $$
-
 
 ---
 
