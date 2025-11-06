@@ -71,7 +71,7 @@ $$
 \end{align}
 $$
 
-If $g_r(t) = {\bar{g}}_i g_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
+If $g_r(t)={\bar{g}}_{i}{g}_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
 
 3. **Virtual system synchronization**  
 Choose a communication strategy and $f^u_{v_i}$ so that
@@ -118,7 +118,7 @@ The **momentum error dynamics** (with right–invariant kinematics) are:
 
 $$
 \begin{align}
-\dot{\pi}_e &= {\mathrm{Ad}}_{e^{-1}}^*\dot{\pi}_v - \dot{\pi}_i + {\mathrm{ad}}_{\omega_e}^*{\mathrm{Ad}}_{e^{-1}}^*\pi_v.
+\dot{\pi}_e&={\mathrm{Ad}}_{e^{-1}}^*\dot{\pi}_v-\dot{\pi}_i+{\mathrm{ad}}_{\omega_e}^*{\mathrm{Ad}}_{e^{-1}}^*\pi_v.
 \end{align}
 $$
 
