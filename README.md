@@ -124,12 +124,10 @@ The **momentum error dynamics** (with right–invariant kinematics) are:
 
 $$
 \begin{align}
-\boxed{
 \dot{\pi}_e
 &= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}_v
 - \dot{\pi}_i
-+ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_v.
-}
++ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_v.\
 \end{align}
 $$
 
@@ -151,7 +149,7 @@ The **control law** is:
 
 $$
 \begin{align}
-f_i^u& =
+f_i^u & =
 \left(
 \mathrm{Ad}_{e^{-1}}^*\dot{\pi}_r
 + \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_r
@@ -213,9 +211,7 @@ $$
 
 $$
 \begin{align}
-\frac{d}{dt}(\mathrm{Ad}_{e^{-1}}^*\pi)
-&= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}
-+ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi
+\frac{d}{dt}(\mathrm{Ad}_{e^{-1}}^*\pi) &= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}+ \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi
 \end{align}
 $$
 
