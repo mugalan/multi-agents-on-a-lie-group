@@ -17,8 +17,8 @@ Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
 
 $$
 \begin{align}
-(g_i, \pi_i) \in G \times \mathfrak{g}^*, \\
-(g_{v_i}, \pi_{v_i}) \in G \times \mathfrak{g}^*,
+(g_i, \pi_i) \in G \times {\mathfrak{g}}^*, \\
+(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}}^*,
 \end{align}
 $$
 
@@ -26,8 +26,8 @@ with left–invariant kinetic energy metrics defined by constant inertia tensors
 
 $$
 \begin{align}
-\mathbb{I}_i : \mathfrak{g} \to \mathfrak{g}^*, \qquad
-\mathbb{I}_{v_i} : \mathfrak{g} \to \mathfrak{g}^*.
+\mathbb{I}_i : \mathfrak{g} \to {\mathfrak{g}}^*, \qquad
+\mathbb{I}_{v_i} : \mathfrak{g} \to {\mathfrak{g}}^*.
 \end{align}
 $$
 
@@ -58,44 +58,49 @@ For virtual systems $V_i$, $f^e_{v_i} \equiv 0$.
 Each agent executes a **three–step strategy**:
 
 1. **Local tracking objective**  
-   Define
-   $$
-   \begin{align}
-   g_r(t) = \bar{g}_i g_{v_i}(t),
-   \end{align}
-   $$
-   where $\bar{g}_i \in G $is constant.  
-   In $SE(3)$, this represents maintaining a fixed pose offset relative to $V_i$.
+Define
+
+$$
+\begin{align}
+g_r(t) = \bar{g}_i g_{v_i}(t),
+\end{align}
+$$
+   
+where $\bar{g}_i \in G $is constant.  In $SE(3)$, this represents maintaining a fixed pose offset relative to $V_i$.
 
 2. **Agent tracking problem**  
-   Choose $f_i^u$ so that 
-   $$ 
-   \begin{align}
-   \lim_{t \to \infty} g_i(t) = g_r(t).
-   \end{align}
-   $$
-   If $g_r(t) = \bar{g}_i g_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
+Choose $f_i^u$ so that 
+
+$$ 
+\begin{align}
+\lim_{t \to \infty} g_i(t) = g_r(t).
+\end{align}
+$$
+If $g_r(t) = \bar{g}_i g_{v_i}(t)$, then $A_i$ converges to configuration $\bar{g}_i$ relative to $V_i$.
 
 3. **Virtual system synchronization**  
-   Choose a communication strategy and $f^u_{v_i}$ so that
-   $$  
-   \begin{align}
-   \lim_{t \to \infty} g_{v_i}(t) = g_v(t), \quad \forall i,
-   \end{align}
-   $$
-   ensuring asymptotic consensus of all virtual systems.
+Choose a communication strategy and $f^u_{v_i}$ so that
+
+$$  
+\begin{align}
+\lim_{t \to \infty} g_{v_i}(t) = g_v(t), \quad \forall i,
+\end{align}
+$$
+ensuring asymptotic consensus of all virtual systems.
 
 ---
 
 ## 4. Error Dynamics
 
 Define the **right–invariant tracking error**
+
 $$
 \begin{align}
 e = g_v g_i^{-1}.
 \end{align}
 $$
 Then:
+
 $$
 \begin{align}
 \dot{e} &= \omega_e \cdot e, \qquad
@@ -104,6 +109,7 @@ $$
 $$
 
 Define the **error momentum**
+
 $$
 \begin{align}
 \pi_e = \operatorname{Ad}_{g_i}^* \mathbb{I}\operatorname{Ad}_{g_v^{-1}}\omega_e
@@ -112,6 +118,7 @@ $$
 $$
 
 The **momentum error dynamics** (with right–invariant kinematics) are:
+
 $$
 \begin{align}
 \boxed{
@@ -138,6 +145,7 @@ df_e = \pi_e \cdot e, \qquad
 $$
 
 The **control law** is:
+
 $$
 \begin{align}
 f_i^u =
@@ -151,6 +159,7 @@ f_i^u =
 $$
 
 The **closed-loop error dynamics** are:
+
 $$
 \begin{align}
 \dot{e} = \omega_e \cdot e,\\
@@ -169,6 +178,7 @@ A global controller broadcasts $g_v(t)$;  each agent uses its AGLES–PID law to
 
 ### Decentralized
 Each agent communicates with neighbors to share $(g_{v_i}(t), \pi_{v_i}(t))$ and applies a consensus-based control $f^u_{v_i}$ to achieve
+
 $$
 \begin{align}
 \lim_{t\to\infty} g_{v_i}(t) = g_v(t), \quad \forall i.
@@ -180,6 +190,7 @@ $$
 ## 7. Mathematical Conventions
 
 **Coadjoint action:**  
+
 $$
 \begin{align}
 \langle \operatorname{Ad}_g^*\mu, \zeta \rangle = \langle \mu, \operatorname{Ad}_{g^{-1}}\zeta \rangle
@@ -187,6 +198,7 @@ $$
 $$
 
 **Right–invariant kinematics:**  
+
 $$
 \begin{align}
 \dot{g} = \omega g
@@ -194,6 +206,7 @@ $$
 $$
 
 **Derivative rule:**  
+
 $$
 \begin{align}
 \frac{d}{dt}(\operatorname{Ad}_{e^{-1}}^*\pi)
