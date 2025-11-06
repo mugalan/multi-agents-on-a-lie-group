@@ -17,8 +17,8 @@ Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
 
 $$
 \begin{align}
-(g_i, \pi_i) \in G \times {\mathfrak{g}}^*, \\
-(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}}^*,
+(g_i, \pi_i) \in G \times {\mathfrak{g}}, \\
+(g_{v_i}, \pi_{v_i}) \in G \times {\mathfrak{g}},
 \end{align}
 $$
 
@@ -115,8 +115,8 @@ Define the **error momentum**
 
 $$
 \begin{align}
-\pi_e = \mathrm{Ad}_{g_i}^* \mathbb{I}\mathrm{Ad}_{g_v^{-1}}\omega_e
-       = \mathrm{Ad}_{e^{-1}}^*\pi_v - \pi_i.
+\pi_e &= \mathrm{Ad}_{g_i}^* \mathbb{I}\mathrm{Ad}_{g_v^{-1}}\omega_e
+= \mathrm{Ad}_{e^{-1}}^*\pi_v - \pi_i.
 \end{align}
 $$
 
@@ -126,7 +126,7 @@ $$
 \begin{align}
 \boxed{
 \dot{\pi}_e
-= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}_v
+&= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}_v
 - \dot{\pi}_i
 + \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_v.
 }
@@ -142,7 +142,7 @@ Define
 
 $$
 \begin{align}
-df_e = \pi_e \cdot e, \qquad
+df_e &= \pi_e \cdot e, \qquad
 \dot{\pi}_I = \pi_e.
 \end{align}
 $$
@@ -151,7 +151,7 @@ The **control law** is:
 
 $$
 \begin{align}
-f_i^u =
+f_i^u& =
 \left(
 \mathrm{Ad}_{e^{-1}}^*\dot{\pi}_r
 + \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_r
@@ -165,9 +165,9 @@ The **closed-loop error dynamics** are:
 
 $$
 \begin{align}
-\dot{e} = \omega_e \cdot e,\\
-\dot{\pi}_I = \pi_e,\\
-\dot{\pi}_e = -k_p\pi_e - k_d\pi_e - k_I\pi_I.
+\dot{e} &= \omega_e \cdot e,\\
+\dot{\pi}_I &= \pi_e,\\
+\dot{\pi}_e &= -k_p\pi_e - k_d\pi_e - k_I\pi_I.
 \end{align}
 $$
 
@@ -185,7 +185,7 @@ Each agent communicates with neighbors to share $(g_{v_i}(t), \pi_{v_i}(t))$ and
 
 $$
 \begin{align}
-\lim_{t\to\infty} g_{v_i}(t) = g_v(t), \quad \forall i.
+\lim_{t\to\infty} g_{v_i}(t) &= g_v(t), \quad \forall i.
 \end{align}
 $$
 
@@ -197,7 +197,7 @@ $$
 
 $$
 \begin{align}
-\langle \mathrm{Ad}_g^*\mu, \zeta \rangle = \langle \mu, \mathrm{Ad}_{g^{-1}}\zeta \rangle
+\langle \mathrm{Ad}_g^*\mu, \zeta \rangle &= \langle \mu, \mathrm{Ad}_{g^{-1}}\zeta \rangle
 \end{align}
 $$
 
@@ -205,7 +205,7 @@ $$
 
 $$
 \begin{align}
-\dot{g} = \omega g
+\dot{g} &= \omega g
 \end{align}
 $$
 
@@ -214,7 +214,7 @@ $$
 $$
 \begin{align}
 \frac{d}{dt}(\mathrm{Ad}_{e^{-1}}^*\pi)
-= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}
+&= \mathrm{Ad}_{e^{-1}}^*\dot{\pi}
 + \mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi
 \end{align}
 $$
