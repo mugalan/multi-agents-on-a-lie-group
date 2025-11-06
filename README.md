@@ -14,13 +14,16 @@ $$\mathscr{A} = \{A_1, A_2, \dots, A_N\},$$
 each modeled as a fully actuated simple mechanical system on a Lie group $G$ with Lie algebra $\mathfrak{g}$ and dual $\mathfrak{g}^*$.
 
 Each agent $A_i$ and its virtual counterpart $V_i$ evolve as:
+
 $$
 \begin{align}
 (g_i, \pi_i) \in G \times \mathfrak{g}^*, \\
 (g_{v_i}, \pi_{v_i}) \in G \times \mathfrak{g}^*,
 \end{align}
 $$
+
 with left–invariant kinetic energy metrics defined by constant inertia tensors:
+
 $$
 \begin{align}
 \mathbb{I}_i : \mathfrak{g} \to \mathfrak{g}^*, \qquad
@@ -33,6 +36,7 @@ $$
 ## 2. Right–Invariant Dynamics
 
 In momentum coordinates, each system evolves as:
+
 $$
 \begin{align}
 \dot{g} = \omega \cdot g, \qquad
