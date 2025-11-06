@@ -140,7 +140,7 @@ The **control law** is:
 
 $$
 \begin{align}
-f_i^u &=\left(\mathrm{Ad}_{e^{-1}}^*\dot{\pi}_r+\mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_r-f_i^e\right)-k_p\pi_e-k_d\pi_e-k_I\pi_I.
+f_i^u&=\left(\mathrm{Ad}_{e^{-1}}^*\dot{\pi}_r+\mathrm{ad}_{\omega_e}^*\mathrm{Ad}_{e^{-1}}^*\pi_r-f_i^e\right)-k_p\pi_e-k_d\pi_e-k_I\pi_I.
 \end{align}
 $$
 
